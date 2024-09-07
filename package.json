@@ -1,7 +1,7 @@
 {
   "name": "react-native-expo-tutorial",
   "version": "1.0.0",
-  "main": "src/screens/App.tsx",
+  "main": "src/screens/app.tsx",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -10,7 +10,9 @@
     "clean": "git clean -xdf .cache .expo android ios node_modules",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --check \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc}\"",
+    "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc}\"", 
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.2.3",
